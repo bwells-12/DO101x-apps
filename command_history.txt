@@ -1,0 +1,341 @@
+    1  sudo -l
+    2  clear
+    3  sudo -l
+    4  docker run hello-world
+    5  minikube start --driver=docker
+    6  sudo nano /etc/docker/daemon.json
+    7  sudo systemctl restart docker
+    8  sudo systemctl status docker
+    9  sudo systemctl start docker
+   10  sudo systemctl stop docker
+   11  sudo systemctl status docker
+   12  sudo systemctl start docker
+   13  sudo systemctl status docker
+   14  docker info
+   15  sudo cat /etc/docker/daemon.json 
+   16  sudo journalctl -u docker
+   17  sudo nano /etc/docker/daemon.json
+   18  sudo systemctl daemon-reload
+   19  sudo systemctl restart docker
+   20  sudo systemctl status docker
+   21  minikube start --driver=docker
+   22  free -h
+   23  clear
+   24  minikube start --driver=docker
+   25  kubectl cluster info
+   26  kubectl cluster-info
+   27  kubectl get nodes
+   28  kubectl cluster-info
+   29  wget https://dl.k8s.io/release/$curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+   30  wget https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+   31  ls -la /bin/linux/amd64/kubectl
+   32  clear
+   33  wget https://github.com/kubernetes/kubernetes/releases/download/v1.30.0/kubectl-linux-amd64 -0 kubectl
+   34  wget https://github.com/kubernetes/kubernetes/releases/download/v1.30.0/kubectl-linux-amd64 -O kubectl
+   35  wget https://github.com/kubernetes/kubernetes/releases/download/v1.30.0/kubectl-linux-amd64 -o kubectl
+   36  wget https://github.com/kubernetes/kubernetes/releases/download/v1.30.0/kubectl-linux-amd64 -O kubectl
+   37  wget https://dl.k8s.io/release/v1.33.1/bin/linux/amd64/kubectl -O kubectl
+   38  wget https://github.com/kubernetes/kubernetes/releases/download/v1.30.1/kubectl-linux-amd64 -O kubectl
+   39  curl -LO https://dl.k8s.io/release/v1.33.1/bin/linux/amd64/kubectl
+   40  ls -la
+   41  time
+   42  date
+   43  chmod +x ./kubectl 
+   44  sudo mv ./kubectl /usr/local/bin/kubectl
+   45  kubecyl version --client
+   46  kubectl version --client
+   47  sudo rm /usr/local/bin/kubectl
+   48  clear
+   49  wget https://dl.k8s.io/release/v1.33.1/bin/linux/amd64/kubectl -O kubectl
+   50  ls -la
+   51  date
+   52  chmod +x kubectl
+   53  ls -la
+   54  sudo mv ./kubectl /usr/local/bin/kubectl
+   55  kubectl version --clinet
+   56  kubectl version --client
+   57  which kubectl
+   58  ls -la
+   59  clear
+   60  which kubectl
+   61  sudo rm /usr/local/bin/kubectl
+   62  clear
+   63  lsblk
+   64  sudo pvresize /dev/sda
+   65  sudo pvresize /dev/sda1
+   66  sudo lvextend -l +100%FREE /dev/mapper/rhel-root
+   67  sudo xfs_growfs /
+   68  df -h
+   69  sudo pvs
+   70  sudo vgs
+   71  sudo lvs
+   72  sudo fdisk -l
+   73  sudo pvremove /dev/sda1
+   74  sudo pvcreate /dev/sda1
+   75  sudo pvresize /dev/sda1
+   76  df -h
+   77  sudo pvresize /dev/sda2
+   78  sudo pvresize /dev/sda1
+   79  sudo lvextend -l +100%FREE /dev/mapper/rhel-root
+   80  sudo pvs
+   81  sudo vgs
+   82  sudo fdisk -l
+   83  sudo lvs
+   84  sudo lvextend -l +100%FREE /dev/mapper/rhel-root
+   85  sudo xfs_growfs /
+   86  df -h
+   87  sudo vgs
+   88  sudo pvs
+   89  sudo lvdisplay /dev/mapper/rhel-root
+   90  sudo fdisk -l
+   91  sudo parted /dev/sda
+   92  clear
+   93  ls -la
+   94  clear
+   95  du -shx * | sort -rh
+   96  ls -la
+   97  cd DO101x-workspace/
+   98  ls -la
+   99  touch mydoc.txt
+  100  ls -la
+  101  vi mydoc.txt
+  102  cat mydoc.txt 
+  103  ifconfig
+  104  clear
+  105  ifconfig
+  106  bwells123
+  107  clear
+  108  oc new-app --name version https://github.com/bwells-12/DO101x-apps#update-app --context-dir version 
+  109  clear
+  110  oc version --client
+  111  clear
+  112  oc login --token=sha256~9ubZxcj-yIJlmgNGzTyvaAB8avWtTNdejlOBZOuBzzo --server=https://api.sandbox-m4.g2pi.p1.openshiftapps.com:6443
+  113  oc login --token=sha256~RZVMQ2bRr7WqXN06-zEa0CtgrMK_VZmpR2gE7Esslw8 --server=https://api.sandbox-m4.g2pi.p1.openshiftapps.com:6443
+  114  oc new-app --name version https://github.com/bwells-12/DO101x-apps#update-app --context-dir version 
+  115  oc get deployment
+  116  oc get service
+  117  oc expose service version
+  118  oc get deployment
+  119  oc login --token=sha256~RZVMQ2bRr7WqXN06-zEa0CtgrMK_VZmpR2gE7Esslw8 --server=https://api.sandbox-m4.g2pi.p1.openshiftapps.com:6443
+  120  oc get deployment
+  121  kubectl get deployment version
+  122  kubectl describe deployment version
+  123  kubectl get pods
+  124  oc login --token=sha256~oTZFCQeqMkaLJR-eMNdQ6oaySL71hajIyTa0tMQQye0 --server=https://api.sandbox-m4.g2pi.p1.openshiftapps.com:6443
+  125  cd /opt/app-root/src
+  126  oc get pods -n contacts
+  127  oc whoami
+  128  history
+  129  oc version --client
+  130  clear
+  131  git --version
+  132  git config --global user.name Berhane
+  133  git config --global user.email Berhanewells@gmail.com
+  134  ifconfig
+  135  clear
+  136  ls -latr
+  137  ./oc_logi.sh
+  138  oc whoami
+  139  oc autoscale deployment scale --min=1 --max=3 --cpu-percent=80
+  140  oc get pods
+  141  oc get builds
+  142  oc logs scale-1-build
+  143  oc autoscale deployment scale --min=1 --max=3 --cpu-percent=80
+  144  oc get pods
+  145  oc autoscale deployment scale-00002 --min=1 --max=3 --cpu-percent=80
+  146  oc delete all -l app=stress
+  147  oc delete all -l app=scale
+  148  oc delete hpa scale
+  149  oc delete secret scale-generic-webhook scale-github-webhook-secret
+  150  oc delete secret stress-generic-webhook stress-github-webhook-secret
+  151  oc get pods
+  152  oc delete pods 
+  153  oc delete pods scale-00002 
+  154  oc get pods
+  155  kubectl delete pods --all
+  156  oc get pods
+  157  kubectl get pods
+  158  oc whoami
+  159  ls -la
+  160  ./oc_logi.sh
+  161  touch git_err.txt
+  162  vi git_err.txt
+  163  clear
+  164  whoami
+  165  ls -la
+  166  cd DO101x-apps
+  167  cd -
+  168  cd DO101x-apps-backup/
+  169  ls -la
+  170  cd contacts-troubleshoot/
+  171  ls -la
+  172  cd ..
+  173  cd contacts
+  174  ls -la
+  175  cd ..
+  176  ls -la
+  177  cd DO101x-workspace/
+  178  ls -la
+  179  cd -
+  180  cd DO101x-apps
+  181  ls -la
+  182  touch oc_logi.sh
+  183  chmod+x oc_logi.sh 
+  184  chmod +x oc_logi.sh 
+  185  ls -la
+  186  vi oc_logi.sh 
+  187  ls -latr
+  188  oc whoami
+  189  ls -la
+  190  cd DO101x-apps
+  191  ls -la
+  192  ./oc_logi.sh
+  193  oc whoami
+  194  ls -la
+  195  pwd
+  196  clear
+  197  oc new-app --template=mysql-persistent -p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb -p MYSQL_ROOT_PASSWORD=r00tpa55 -p VOLUME_CAPACITY=10Gi
+  198  oc project
+  199  oc new-app --template=openshift/mysql-persistent -p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb -p MYSQL_ROOT_PASSWORD=r00tpa55 -p VOLUME_CAPACITY=10Gi
+  200  oc get template mysql-persistent -n openshift -o yaml > mysql-template.yaml
+  201  ls -la
+  202  vi oc get template mysql-persistent -n openshift -o yaml > mysql-template.yaml
+  203  ./oc_logi.sh
+  204  cd DO101x-apps
+  205  ./oc_logi.sh
+  206  ls -latr
+  207  vim mysql-template.yaml
+  208  vi mysql-template.yaml
+  209  nano mysql-template.yaml
+  210  oc get template mysql-persistent -n openshift -o yaml > mysql-template.yaml
+  211  ls -latr
+  212  oc get template mysql-persistent -n openshift -o yaml
+  213  ls -la
+  214  vi mysql-template.yaml
+  215  oc get templates -n openshift
+  216  oc new-app --template=openshift/mysql-persistent-template -p MYSQL_USER=user1 -p MYSQL_PASSWORD=mypa55 -p MYSQL_DATABASE=testdb -p MYSQL_ROOT_PASSWORD=r00tpa55 -p VOLUME_CAPACITY=10Gi
+  217  oc new-app --template=openshift/mysql-persistent   -p MYSQL_USER=user1   -p MYSQL_PASSWORD=mypa55   -p MYSQL_DATABASE=testdb   -p MYSQL_ROOT_PASSWORD=r00tpa55   -p VOLUME_CAPACITY=10Gi
+  218  oc new-app --template=openshift/mysql-persistent   -p MYSQL_USER=user1   -p MYSQL_PASSWORD=mypa55   -p MYSQL_DATABASE=testdb   -p MYSQL_ROOT_PASSWORD=r00tpa55   -p VOLUME_CAPACITY=10Gi
+  219  ls -la
+  220  vi mysql-template.yaml
+  221  oc new-app --template=openshift/mysql-persistent   -p MYSQL_USER=user1   -p MYSQL_PASSWORD=mypa55   -p MYSQL_DATABASE=testdb   -p MYSQL_ROOT_PASSWORD=r00tpa55   -p VOLUME_CAPACITY=10Gi   -p NAMESPACE=b-bwells-dev
+  222  oc apply -f mysql-template.yaml -n b-bwells-dev
+  223  vi mysql-template.yaml
+  224  oc apply -f mysql-template.yaml -n b-bwells-dev
+  225  oc new-app --template=mysql-persistent   -p MYSQL_USER=user1   -p MYSQL_PASSWORD=mypa55   -p MYSQL_DATABASE=testdb   -p MYSQL_ROOT_PASSWORD=r00tpa55   -p VOLUME_CAPACITY=10Gi
+  226  oc status
+  227  oc get all
+  228  oc get pods
+  229  oc get is -n openshift
+  230  oc import-image mysql --from=openshift/mysql:8.0-el8 --confirm -n b-bwells-dev
+  231  oc import-image mysql --from=mysql:8.0 --confirm -n b-bwells-dev
+  232  oc tag --source=docker mysql:8.0 mysql:latest -n b-bwells-dev
+  233  oc rollout latest dc/mysql -n b-bwells-dev
+  234  oc get is mysql -n b-bwells-dev
+  235  oc set image dc/mysql mysql=default-route-openshift-image-registry.apps.sandbox-m4.g2pi.p1.openshiftapps.com/b-bwells-dev/mysql:latest -n b-bwells-dev
+  236  oc rollout latest dc/mysql -n b-bwells-dev
+  237  oc describe dc/mysql -n b-bwells-dev
+  238  oc set triggers dc/mysql --remove-all -n b-bwells-dev
+  239  oc describe dc/mysql -n b-bwells-dev
+  240  oc rollout latest dc/mysql -n b-bwells-dev
+  241  oc get secret mysql -o yaml -n b-bwells-dev
+  242  oc get pvc mysql -n b-bwells-dev
+  243  oc get pods -n b-bwells-dev
+  244  oc logs mysql-1-pg4wk -n b-bwells-dev
+  245  oc exec -it mysql-1-pg4wk -n b-bwells-dev -- /bin/sh
+  246  oc get pods -n b-bwells-dev
+  247  oc run temp-shell --image=busybox --rm -it --restart=Never -- /bin/sh -n b-bwells-dev
+  248  oc run temp-shell --image=busybox --rm -it --restart=Never -n b-bwells-dev -- /bin/sh
+  249  oc run temp-shell --image=alpine --rm -it --restart=Never -n b-bwells-dev -- /bin/sh
+  250  oc rollout latest dc/mysql -n b-bwells-dev
+  251  oc get pods -n b-bwells-dev
+  252  oc logs mysql-2-xrtcf -n b-bwells-dev
+  253  oc run temp-shell --image=alpine --rm -it --restart=Never -n b-bwells-dev -- /bin/sh
+  254  oc run temp-shell --image=alpine --rm -it --restart=Never -n b-bwells-dev -- /bin/sh --privileged
+  255  oc delete pvc mysql -n b-bwells-dev
+  256  oc rollout latest dc/mysql -n b-bwells-dev
+  257  oc get pods -n b-bwells-dev
+  258  oc describe pod mysql-3-8nc56 -n b-bwells-dev
+  259  oc get pvc -n b-bwells-dev
+  260  touch mysql-pvc.yaml
+  261  vi mysql-pvc.yaml
+  262  oc apply -f mysql-pvc.yaml
+  263  oc get pvc -n b-bwells-dev
+  264  oc rollout latest dc/mysql -n b-bwells-dev
+  265  oc get pods -n b-bwells-dev
+  266  oc get pvc -n b-bwells-dev
+  267  oc rollout latest dc/mysql -n b-bwells-dev
+  268  oc get pvc -n b-bwells-dev
+  269  oc get pods -n b-bwells-dev
+  270  oc logs mysql-4-7hxm5 -n b-bwells-dev
+  271  cd /var/lib/mysql
+  272  oc run temp-shell --image=alpine --rm -it --restart=Never -n b-bwells-dev -- /bin/sh
+  273  oc run temp-shell --image=alpine --restart=Never -n b-bwells-dev -- /bin/sh -c "mkdir -p /mnt/mysql && mount /dev/disk/by-id/<your-pv-id> /mnt/mysql && exec /bin/sh"
+  274  oc get pvc mysql -n b-bwells-dev -o jsonpath='{.spec.volumeName}'
+  275  oc get pods -n b-bwells-dev
+  276  oc exec -it <temp-shell-pod-name> -n b-bwells-dev -- /bin/sh
+  277  oc exec -it temp-shell -n b-bwells-dev -- /bin/sh
+  278  oc logs temp-shell -n b-bwells-dev
+  279  oc run temp-shell --image=busybox --restart=Never -n b-bwells-dev -- /bin/sh
+  280  oc delete pod temp-shell -n b-bwells-dev
+  281  oc run temp-shell --image=busybox --restart=Never -n b-bwells-dev -- /bin/sh
+  282  oc exec -it temp-shell -n b-bwells-dev -- /bin/sh
+  283  oc get pods -n b-bwells-dev
+  284  oc exec -it temp-shell -n b-bwells-dev -- /bin/sh
+  285  oc delete pod temp-shell -n b-bwells-dev
+  286  oc run temp-shell --image=busybox --restart=Never -n b-bwells-dev -- /bin/sh
+  287  oc get pods -n b-bwells-dev
+  288  oc delete pod temp-shell -n b-bwells-dev
+  289  oc get pods -n b-bwells-dev
+  290  oc run temp-shell --image=busybox --restart=Never -n b-bwells-dev -- /bin/sh
+  291  oc get pods -n b-bwells-dev
+  292  oc exec -it temp-shell -n b-bwells-dev -- /bin/sh
+  293  oc delete pod temp-shell -n b-bwells-dev
+  294  clear
+  295  touch temp-shell.yaml
+  296  vi temp-shell.yaml
+  297  oc apply -f temp-shell.yaml
+  298  oc get pods -n b-bwells-dev
+  299  oc exec -it temp-shell -n b-bwells-dev -- /bin/sh
+  300  touch privileged-shell.yaml
+  301  vi privileged-shell.yaml 
+  302  oc apply -f privileged-shell.yaml
+  303  vi privileged-shell.yaml 
+  304  mv privileged-shell.yaml non-privileged-shell.yaml
+  305  oc get pods -n b-bwells-dev
+  306  oc apply -f non-privileged-shell.yaml
+  307  oc exec -it non-privileged-shell -n b-bwells-dev -- /bin/sh
+  308  clear
+  309  oc get pods -n b-bwells-dev
+  310  oc delete pod temp-shell -n b-bwells-dev
+  311  history
+  312  oc rollout latest dc/mysql -n b-bwells-dev
+  313  oc get pods -n b-bwells-dev
+  314  oc describe pod mysql-5-w9pbs
+  315  oc get service
+  316  clear
+  317  oc describe service mysql
+  318  oc describe pod mysql-5-w9pbs | grep IP
+  319  oc get pods -n b-bwells-dev
+  320  oc delete pod mysql-5-w9pbs
+  321  oc get pods -n b-bwells-dev
+  322  oc rollout latest dc/mysql -n b-bwells-dev
+  323  oc get pods -n b-bwells-dev
+  324  oc delete pod mysql-1-deploy mysql-2-deploy 
+  325  oc delete pod mysql-3-deploy
+  326  oc delete pod mysql-4-deploy
+  327  oc delete pod mysql-5-deploy
+  328  oc get pods -n b-bwells-dev
+  329  oc describe non-privileged-shell
+  330  oc describe pod mysql-6-d5qgq
+  331  clear
+  332  oc get pvc
+  333  oc get persistentvolumeclaim
+  334  oc get pods -n b-bwells-dev
+  335  oc delete all,secrets,pvc -l app=mysql-persistent
+  336  oc get pods -n b-bwells-dev
+  337  oc delete non-privileged-shell
+  338  oc delete pod non-privileged-shell
+  339  oc get pods -n b-bwells-dev
+  340  history
+  341  history > command_history.txt
